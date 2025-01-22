@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/tafFlightService/src/main/java/com/tekarch/tafFlightService/Config/RestTemplateConfig.java;C:/Users/kppra/tafFlightService/tafFlightService/src/main/java/com/tekarch/tafFlightService/Controller/FlightController.java;C:/Users/kppra/tafFlightService/tafFlightService/src/main/java/com/tekarch/tafFlightService/DTO/FlightDTO.java;C:/Users/kppra/tafFlightService/tafFlightService/src/main/java/com/tekarch/tafFlightService/Services/Interfaces/FlightServiceInterface.java;C:/Users/kppra/tafFlightService/tafFlightService/src/main/java/com/tekarch/tafFlightService/Services/FlightServiceImpl.java;C:/Users/kppra/tafFlightService/tafFlightService/src/main/java/com/tekarch/tafFlightService/TafFlightServiceApplication.java;C:/Users/kppra/tafFlightService/tafFlightService/src/test/java/com/tekarch/tafFlightService/TafFlightServiceApplicationTests.java" />
+  </component>
+</project>
