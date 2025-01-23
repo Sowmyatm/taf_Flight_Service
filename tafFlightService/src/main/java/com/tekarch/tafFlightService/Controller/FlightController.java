@@ -26,16 +26,16 @@ public class FlightController {
         return flightService.getAllFlights();
     }
 
-    @GetMapping("/{flightId}")
-    public ResponseEntity<FlightDTO> getFlightById(@PathVariable Long flightId) {
-        FlightDTO flightDTO = flightService.getFlightById(flightId);
-        return ResponseEntity.ok(flightDTO);
-    }
-
 //    @GetMapping("/{flightId}")
-//    public FlightDTO getFlightById(@PathVariable Long flightId) {
-//        return flightService.getFlightById(flightId);
+//    public ResponseEntity<FlightDTO> getFlightById(@PathVariable Long flightId) {
+//        FlightDTO flightDTO = flightService.getFlightById(flightId);
+//        return ResponseEntity.ok(flightDTO);
 //    }
+
+    @GetMapping("/{id}")
+    public FlightDTO getFlightById(@PathVariable Long id) {
+        return flightService.getFlightById(id);
+    }
 
     @PostMapping
     public FlightDTO addFlight(@RequestBody FlightDTO flightDTO) {

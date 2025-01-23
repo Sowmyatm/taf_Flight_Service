@@ -44,14 +44,14 @@ public class FlightServiceImpl implements FlightServiceInterface {
 //    }
 
     @Override
-    public FlightDTO getFlightById(Long flightId) {
-//        String url = "http://localhost:8080/datastore/flights/" + flightId; // Ensure flightId is a Long
+    public FlightDTO getFlightById(Long id) {
+        String url = "http://localhost:8080/datastore/flights/" + id; // Ensure flightId is a Long
 
-        ResponseEntity<FlightDTO> response = restTemplate.getForEntity(DATASTORE_URL + "/" + flightId,  FlightDTO.class);
+        ResponseEntity<FlightDTO> response = restTemplate.getForEntity(DATASTORE_URL + "/" + id,  FlightDTO.class);
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
             return response.getBody();
         } else {
-            throw new RuntimeException("Failed to fetch flight details for ID: " + flightId);
+            throw new RuntimeException("Failed to fetch flight details for ID: " + id);
         }
     }
 
